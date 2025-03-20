@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Netflix Clone</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .movies {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 10px;
+        }
+        
+        .movie {
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .movie img {
+            width: 150px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+        
+        .movie:hover img {
+            transform: scale(1.5);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Netflop</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+
+        <div class="banner-content">
+            <h1>Welcome to Netflop</h1>
+            <h2>Watch Your Favorite Shows</h2>
+            <p>Stream movies and TV shows anytime, anywhere!</p>
+            <button>Get Started</button>
+        </div>
+    </section>
+
+    <section class="movie-row">
+        <h2>Trending Now</h2>
+        <div class="movies">
+            <div class="movie"><img src="WhatsApp Image 2025-03-20 at 15.21.28_aaed977c.jpg" alt="ZNMD"></div>
+
+            <div class="movie"><img src="WhatsApp Image 2025-03-20 at 15.20.03_88788994.jpg" alt="3 Idiots"></div>
+            <div class="movie"><img src="WhatsApp Image 2025-03-20 at 15.20.24_e7f48613.jpg" alt="Yeh Jawani Yeh Deewani"></div>
+            <div class="movie"><img src="WhatsApp Image 2025-03-20 at 15.20.48_c534074f.jpg" alt="Taare Zameen Par"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Netflix Clone</p>
+    </footer>
+</body>
+</html>
